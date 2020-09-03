@@ -1,0 +1,233 @@
+.attribution { 
+    font-size: 0.7vw; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% 100%;
+    background-color: hsl(0, 100%, 74%);
+    height: auto;
+    font-family: Poppins;
+    color: white;
+}
+
+#first, #last, #email, #password {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    font-size: 0.6vw;
+    line-height: 1.5vw;
+    float: right;
+    margin-right: 1vw;
+    font-weight: 500;
+    margin-bottom: -0.4vw;
+    display: none;
+}
+
+.error {
+    position: absolute;
+    margin-top: 1.8vw;
+    margin-left: -2.2vw;
+    display: none;
+    width: 1.5vw;
+}
+
+h1 {
+    font-size: 2.6vw;
+    line-height: 3vw;
+}
+
+#introduction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 29vw;
+    margin-left: -15vw;
+    margin-top: -1vw;
+
+    p {
+        font-size: 0.85vw;
+        margin-top: -0.2vw;
+    }
+}
+
+#signup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28vw;
+    margin-left: 14.7vw;
+
+        div {
+            border-radius: 0.4vw;
+        }
+
+        p {
+            font-size: 0.6vw;
+            text-align: center;
+        }
+}
+
+#trial {
+    background-color: hsl(248, 32%, 49%);
+    height: 2vw;
+    text-align: center;
+    margin-bottom: 1.2vw;
+    padding-top: 1vw;
+    font-size: 0.8vw;
+    box-shadow: 0px 0.4vw rgba(0, 0, 0, 0.15);
+}
+
+#fields {
+    background-color: white;
+    padding: 1.5vw;
+    padding-left: 2.2vw;
+    box-shadow: 0px 0.4vw rgba(0, 0, 0, 0.15);
+
+    input {
+        width: 22vw; 
+        height: 2.7vw;
+        border-radius: 0.2vw;
+        border: 0.1vw solid hsl(246, 25%, 77%);
+        color: hsl(249, 10%, 26%);
+        font-weight: 700;
+        font-size: 0.8vw;
+        padding-left: 1.6vw;
+        margin-top: 1vw;
+    }
+
+    p {
+        color: hsl(246, 25%, 77%);
+
+            b {
+                color: hsl(0, 100%, 74%);
+            }
+    }
+
+}
+
+input:focus {
+    color: hsl(249, 10%, 26%);
+    border: 0.1vw solid hsl(249, 10%, 26%);
+}
+
+#claim {
+    background-color: hsl(154, 59%, 51%);
+    height: 2.7vw;
+    width: 23.8vw;
+    border-radius: 0.2vw;
+    color: white;
+    border: 0;
+    font-size: 0.8vw;
+    font-weight: 600;
+    margin-top: 1vw;
+    text-align: center;
+    border-bottom: 0.3vw solid hsl(154, 58%, 42%);
+}
+
+#claim:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url("../images/bg-intro-mobile.png");
+        background-repeat: repeat-y;
+
+    }
+
+    .attribution {
+        font-size: 2.5vw;
+    }
+
+    h1 {
+        font-size: 6.5vw;
+        line-height: 8vw;
+    }
+
+    #first, #last, #email, #password {
+        font-size: 3vw;
+        padding-top: 1.4vw;
+        margin-bottom: 2vw;
+        padding-right: 2vw;
+    }
+
+    .error {
+        width: 6vw;
+        margin-top: 7vw;
+        margin-left: -10vw;
+    }
+
+    #introduction {
+        width: 85vw;
+        top: 45vw;
+        left: 65vw;
+        text-align: center;
+
+        p {
+            font-size: 4.2vw;
+        }
+    }
+
+    #signup {
+        width: 85vw;
+        left: 35.5vw;
+        top: 158vw;
+        padding-bottom: 10vw;
+
+        div {
+            border-radius: 1.8vw;
+        }
+
+        p {
+            font-size: 3.3vw;
+        }
+    }
+
+    #trial {
+        height: 16vw;
+        font-size: 4vw;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-top: 3vw;
+        margin-bottom: 5vw;
+        box-shadow: 0px 2vw rgba(0, 0, 0, 0.15);
+    }
+
+    #fields {
+        padding: 5vw;
+        padding-top: 3vw;
+        box-shadow: 0px 2vw rgba(0, 0, 0, 0.15);
+
+        input {
+            width: 69vw;
+            height: 12vw;
+            font-size: 3vw;
+            padding-left: 5vw;
+            border-radius: 1.8vw;
+            margin-top: 3vw;
+        }
+    }
+
+    #claim {
+        width: 75vw;
+        height: 12vw;
+        font-size: 4vw;
+        border-radius: 1.8vw;
+        margin-top: 3vw;
+        border-bottom: 0.8vw solid hsl(154, 58%, 42%);
+    }
+
+  }
